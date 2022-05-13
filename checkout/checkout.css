@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300 display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: cornsilk;
+    max-height: 100vh;
+}
+
+h1, h2 {
+    color: rgb(36, 46, 82);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    height: 97.5vh;
+}
+
+/* -------------------- Categories AKA Left -------------------------------------- */
+
+.item_category{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.item_category h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+/* -------------------- Item Description AKA Top Right -------------------------------------- */
+
+.item_description{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+}
+
+.item_description h1{
+    margin-left: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+td {
+    padding-bottom: 5px;
+}
+
+.checkout_form input {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 35px;
+}
+
+.checkout_form {
+    display: flex;
+    justify-content: center;
+  }
+
+#label_ln {
+    margin-left: 39px;
+}
+
+#last_name {
+    margin-left: 39px;
+}
+
+#email{
+    width: 750px;
+    height: 35px;
+}
+
+#address {
+    width: 750px;
+    height: 35px;
+}
+
+#country {
+    width: 750px;
+    height: 35px;
+}
+
+#label_state {
+    margin-left: 46px;
+}
+
+#state {
+    margin-left: 46px;
+}
+
+#state:hover{
+    cursor: pointer;
+}
+
+.checkout_form button {
+    margin-top: 10px;
+    width: 350px;
+    height: 35px;
+}
+
+#complete_purchase_btn {
+    width: 760px;
+    height: 3rem;
+    background-color: lightgreen;
+    color: rgb(36, 46, 82);
+    border: solid;
+    border-width: 1.5px;
+    border-color: rgb(36, 46, 82);
+    border-radius: 10px;
+    font-size: 18px
+}
+
+#complete_purchase_btn:hover{
+    cursor: pointer;
+}
+
+.checkout_form select {
+    margin-bottom: 10px;
+    width: 350px;
+    height: 35px;
+}
+
+label:after {
+    content:"*";
+    color: red;
+  }
+
+.shopping_cart{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.shopping_cart div{
+    margin-left: 2rem;
+}
+
+.shopping_cart_wrapper {
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.product_card{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    height: 12rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+
+    margin-left: 0px;
+    margin-bottom: 2rem;
+}
+
+.product_card img {
+    max-height: 10rem;
+    max-width: 10rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prod_img{
+    margin-top: auto;
+}
+
+.product_card p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.product_card button:hover{
+    cursor: pointer;
+}
+
+.remove_item {
+    float: right;
+    position: relative;
+    top: -162px;
+    background-color: rgb(255, 140, 140);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.remove_item:hover {
+    cursor: pointer;
+}
+
+
+#frozenIcon {
+    height: 80px;
+}
+
+#frozenFoods > summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 275px;
+}

@@ -1,0 +1,461 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300 display=swap'); */
+
+body {
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Times New Roman', Times, serif; */
+    background-color: cornsilk;
+    max-height: 100vh;
+}
+
+h1, h2 {
+    color: rgb(36, 46, 82);
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    height: 97.5vh;
+}
+
+/* -------------------- Categories AKA Left -------------------------------------- */
+
+.item_category{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.item_category h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.item_category h2 {
+    padding-left: 2rem;
+    font-size: 2rem;
+}
+
+.item_category li{
+    list-style-type: none;
+    margin-bottom: 2.5rem;
+}
+
+.item_category h3 {
+    text-decoration: none;
+    color: rgb(36, 46, 82);
+    font-size: 1.75rem;
+    margin-bottom: 0px;
+}
+
+.item_category ul{
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.item_category button {
+    float: right;
+    background-color: rgb(36, 46, 82);
+    color: white;
+    border-radius: 10px;
+    border-width: 2px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    margin-top: 26px;
+}
+
+#beveragesBtn{
+    margin-top: 34px;
+}
+
+.item_category button:hover {
+    cursor: pointer;
+}
+
+.item_category h3:hover{
+    cursor: pointer
+}
+
+#frozenFoods{
+    width: 175px;
+}
+
+#frozenIcon {
+    height: 80px;
+}
+
+#frozenIcon:hover {
+    cursor: pointer;
+}
+
+#frozenFoods > summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 270px;
+}
+
+#freshFoods{
+    width: 155px;
+}
+
+#freshFoodsIcon {
+    height: 80px;
+}
+
+#freshFoodsIcon:hover {
+    cursor: pointer;
+}
+
+#freshFoods > summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-column-gap: 10px;
+    width: 240px;
+}
+
+#beverages{
+    width: 145px;
+}
+
+#bevIcon {
+    height: 80px;
+}
+
+#bevIcon:hover {
+    cursor: pointer;
+}
+
+#beverages > summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-column-gap: 9.5px;
+    width: 240px;
+}
+
+#beverages > summary > h3 {
+    margin-top: 35px;
+}
+
+#homeHealth{
+    width: 175px;
+}
+
+#homeHealthIcon {
+    height: 80px;
+}
+
+#homeHealthIcon:hover {
+    cursor: pointer;
+}
+
+#homeHealth > summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 32% 68%;
+    grid-column-gap: 7px;
+    width: 270px;
+}
+
+#homeHealth summary > h3{
+    margin-bottom: 1rem;
+}
+
+#petFoods{
+    width: 125px;
+}
+
+#petFoods summary > h3 {
+    margin-bottom: 1rem;
+}
+
+#petFoodIcon {
+    height: 80px;
+}
+
+#petFoodIcon:hover {
+    cursor: pointer;
+}
+
+#petFoods > summary {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-column-gap: 9px;
+    width: 240px;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.menu-view div > a {
+    text-decoration: none;
+    color: rgb(36, 46, 82);
+    font-size: 18px;
+    padding-left: 2rem;
+}
+
+details > div > h3{
+    padding-left: 0.75rem;
+}
+
+.summary_content{
+    width: 350px;
+    margin-top: 0.5rem;
+}
+
+.summary_content h3{
+    margin-bottom: 0.5rem;
+}
+
+.item_category details div {
+    margin-left: 3rem;
+}
+
+/* -------------------- Item Description AKA Top Right -------------------------------------- */
+
+.item_description{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+}
+
+.item_description h1{
+    margin-left: 2rem;
+    margin-top: 2rem;
+}
+
+.product_deets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+    margin: 5rem 2rem 2rem 2rem;
+}
+
+.product_deets div {
+    max-height: fit-content
+}
+
+.product_deets img {
+    max-height: 30vh;
+    max-width: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.product_deets p {
+    font-size: 20px;
+}
+
+.product_deets h3{
+    margin-top: 0px;
+}
+
+.quantity{
+    width: 108px;
+    height: 34px;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid;
+    border-width: 2px;
+    border-color: rgb(36, 46, 82);
+    outline: none;
+    position: relative;
+    top: -5px;
+    left: -5px;
+}
+
+.product_deets input::placeholder{
+    font-size: 16px;
+    padding: 0 20px;
+    height: 38px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+.product_deets input::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.product_deets input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.add_to_cart {
+    width: 150px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    background-color: rgb(36, 46, 82);
+    border-radius: 8px;
+    color: white;
+    outline: none;
+    position: relative;
+    top: 5px;
+}
+
+.add_to_cart:hover {
+    cursor: pointer;
+}
+
+.product_deets button:hover {
+    cursor: pointer;
+}
+
+.plus {
+    background-color: rgb(36, 46, 82);
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.55rem;
+    position: relative;
+    /* top: -3.5px; */
+    top: -3px;
+    left: -10px;
+}
+
+.minus {
+    background-color: rgb(36, 46, 82);
+    border-radius: 10px 0px 0px 10px;
+    width: 2rem;
+    color: white;
+    font-size: 2.1rem;
+    border: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------------------- Shopping Cart AKA Bottom Right -------------------------------------- */
+
+.shopping_cart{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.shopping_cart div{
+    margin-left: 2rem;
+}
+
+.shopping_cart_wrapper {
+    margin-right: 4rem;
+    margin-top: 4rem;
+}
+
+.checkoutBtn {
+    float: right;
+    /* background-color: rgb(36, 46, 82);
+    color: white; */
+    background-color: lightgreen;
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    position: relative;
+    top: -58px;
+    margin-right: 10px;
+    right: 40px;
+}
+
+.checkoutBtn:hover{
+    cursor: pointer;
+}
+
+.clearCartBtn {
+    float: right;
+    background-color: rgb(255, 140, 140);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: none;
+    position: relative;
+    top: -58px;
+    right: 40px;
+}
+
+.clearCartBtn:hover{
+    cursor: pointer;
+}
+
+.product_card{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    height: 12rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+
+    margin-left: 0px;
+    margin-bottom: 2rem;
+}
+
+.product_card img {
+    max-height: 10rem;
+    max-width: 10rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prod_img{
+    margin-top: auto;
+}
+
+.product_card p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.product_card button:hover{
+    cursor: pointer;
+}
+
+.shopping_cart h2 {
+    text-align: center;
+}
+
+.remove_item {
+    float: right;
+    position: relative;
+    top: -162px;
+    background-color: rgb(255, 140, 140);
+    border: none;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+}
+
+.remove_item:hover {
+    cursor: pointer;
+}

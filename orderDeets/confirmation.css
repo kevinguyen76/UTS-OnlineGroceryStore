@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300 display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: cornsilk;
+    max-height: 100vh;
+}
+
+h1, h2 {
+    color: rgb(36, 46, 82);
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 5rem;
+}
+
+.order_details{
+    width: 75%;
+    height: 96vh;
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shopping_cart{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align:justify;
+}
+
+.shopping_cart div{
+    margin-left: 2rem;
+}
+
+.shopping_cart_wrapper {
+    margin-right: 4rem;
+    margin-top: 4rem;
+    margin-left: 4rem;
+}
+
+.product_card{
+    border-width: 2px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgb(126, 126, 126);
+    height: 12rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+
+    margin-left: 0px;
+    margin-bottom: 2rem;
+}
+
+.product_card img {
+    max-height: 10rem;
+    max-width: 10rem;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prod_img{
+    margin-top: 25px;
+}
+
+.product_card p{
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.product_card button:hover{
+    cursor: pointer;
+}
+
+#back_to_home {
+    width: 100%;
+    height: 3rem;
+    background-color: lightgreen;
+    color: black;
+    border: solid;
+    border-width: 1.5px;
+    border-color: rgb(36, 46, 82);
+    border-radius: 10px;
+    font-size: 18px
+}
+
+#back_to_home:hover{
+    cursor: pointer;
+}
+
+text {
+    margin-bottom: 5px;
+    margin-left: 4rem;
+    font-size: 18px;
+}
+
